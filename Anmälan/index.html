@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta
+      name="description"
+      content="Bättre Web, ett måste för dig som älskar webbdesign."
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anmälan bättre web</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo"></a>
+
+      <nav class="navbar">
+        <a href="#">Meny</a>
+        <a href="#">Talare</a>
+        <a href="#">Anmälan</a>
+        <a href="#">Kontakta oss</a>
+      </nav>
+    </header>
+    <section class="home">
+      <div class="home-content">
+        <h1>Göteborg Front End</h1>
+
+        <img
+          class="custom-image"
+          src="https://www.frontend-gmbh.de/wp-content/themes/frontendgmbh/downloads/frontend-logo.png"
+          alt="loga"
+        />
+      </div>
+    </section>
+
+    <section>
+      <form>
+        <section class="form-container">
+          <label class="form-label">Namn</label>
+          <input type="text" id="Namn" placeholder="Anders" required />
+        </section>
+
+        <section class="form-container">
+          <label class="form-label">Efternamn</label>
+          <input type="text" id="Efternamn" placeholder="Andersson" required />
+        </section>
+
+        <section class="form-container">
+          <label class="form-label">Adress</label>
+          <input type="text" id="Adress" placeholder="Storgatan 16" required />
+        </section>
+
+        <section class="form-container">
+          <label class="form-label">E-postadress</label>
+          <input
+            type="text"
+            id="E-postadress"
+            placeholder="anders.andersson@gmail.com"
+            required
+          />
+        </section>
+        <section class="form-container">
+          <label class="form-label" for="Mobilnummer">Mobilnummer</label>
+          <input
+            type="text"
+            id="Mobilnummer"
+            placeholder="+46 76 327 46 94"
+            required
+            pattern="[0-9]+"
+          />
+        </section>
+
+        <section class="form-container">
+          <label class="form-label">Allergier</label>
+          <input type="text" id="Allergier" placeholder="Nötter" required />
+        </section>
+
+        <section class="form-container">
+          <label class="form-label" for="betalning">Betalning</label>
+          <select id="betalning" name="betalning" required>
+            <option>Visa</option>
+            <option>Mastercard</option>
+            <option>Swish</option>
+          </select>
+        </section>
+
+        <section class="form-container">
+          <div class="dagar">
+            Dagar:
+            <label class="days" for="Dagar"
+              >20 Okt:
+              <input type="checkbox" name="Dagar" />
+              <span class="check"></span>
+            </label>
+            <label class="days" for="Dagar"
+              >21 Okt:
+              <input type="checkbox" name="Dagar" />
+              <span class="check"></span>
+            </label>
+            <label class="days" for="Dagar"
+              >22 Okt:
+              <input type="checkbox" name="Dagar" />
+              <span class="check"></span>
+            </label>
+          </div>
+        </section>
+
+        <section class="button">
+          <button>Skicka in</button>
+        </section>
+      </form>
+    </section>
+    <footer>
+      <div class="footer-container">
+        <div class="social-icons">
+          <a href=""><i class="fa-brands fa-facebook"></i> </a>
+          <a href=""><i class="fa-brands fa-instagram"></i> </a>
+          <a href=""><i class="fa-brands fa-twitter"></i> </a>
+          <a href=""><i class="fa-brands fa-google-plus"></i> </a>
+          <a href=""><i class="fa-brands fa-youtube"></i> </a>
+        </div>
+        <div class="footer-nav">
+          <ul>
+            <li><a href="">Meny</a></li>
+            <li><a href="">Talare</a></li>
+            <li><a href="">Anmälan</a></li>
+            <li><a href="">Kontakta oss</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          Copyright &copy;2023; Designd By<span class="designer">
+            Liam Bard
+          </span>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
