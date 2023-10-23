@@ -271,4 +271,306 @@ footer {
     }
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background-color: #081b29;
+    color: #ededed;
+}
 
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 20px;
+    transition: .3s;
+}
+
+.navbar a:hover {
+    color: #00abf0;
+}
+
+
+.image-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+
+}
+
+.image-logo img {
+    width: 400px; 
+    height: auto; 
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: pointer;
+    align-self: center;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 100px;
+    grid-row-gap: 40px;
+    cursor: pointer;
+    align-self: center;
+   
+    }
+
+    .parent >div:hover {
+        background-color: rgb(74, 84, 238);
+    }
+    
+  
+    .div1 { 
+        grid-area: 1 / 1 / 2 / 2;
+        background-color: rgb(63, 63, 110);
+        width: 250px;
+        height: 150px;
+        border-radius: 65px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+     }
+    .div2 { 
+        grid-area: 1 / 2 / 2 / 3;
+        background-color: rgb(63, 63, 110);
+        width: 250px;
+        height: 150px;
+        border-radius: 65px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+     }
+    .div3 { 
+        grid-area: 1 / 3 / 2 / 4;
+        background-color: rgb(63, 63, 110);
+        width: 250px;
+        height: 150px;
+        border-radius: 65px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+     }
+    .div4 { 
+        grid-area: 1 / 4 / 2 / 5;
+        background-color: rgb(63, 63, 110);
+        width: 250px;
+        height: 150px;
+        border-radius: 65px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+     }
+    .div5 { 
+        grid-area: 2 / 1 / 3 / 2;
+        background-color: rgb(63, 63, 110);
+        width: 250px;
+        height: 150px;
+        border-radius: 65px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+     }
+    .div6 { 
+        grid-area: 2 / 2 / 3 / 3;
+        background-color: rgb(63, 63, 110);
+        width: 250px;
+        height: 150px;
+        border-radius: 65px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+     }
+    .div7 { 
+        grid-area: 2 / 3 / 3 / 4;
+        background-color: rgb(63, 63, 110);
+        width: 250px;
+        height: 150px;
+        border-radius: 65px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+     }
+    .div8 { 
+        grid-area: 2 / 4 / 3 / 5; 
+        background-color: rgb(63, 63, 110);
+        width: 250px;
+        height: 150px;
+        border-radius: 65px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .div9 { 
+        grid-area: 1 / 5 / 2 / 6;
+        background-color: rgb(63, 63, 110);
+        width: 250px;
+        height: 150px;
+        border-radius: 65px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+     }
+    .div10 { 
+        grid-area: 2 / 5 / 3 / 6;
+        background-color: rgb(63, 63, 110);
+        width: 250px;
+        height: 150px;
+        border-radius: 65px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+     }
+
+     * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    .grid-item {
+        background-color: rgb(63, 63, 110);
+        width: 250px;
+        height: 150px;
+        border-radius: 65px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px; 
+    }
+
+    @media (max-width: 800px) {
+        .parent {
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(10, 1fr);
+        }
+    
+        .div1, .div2,.div5, .div9{
+            grid-column: 1;
+        }
+    
+        .div3, .div4, .div7, .div8,.div6, .div10 {
+            grid-column: 2;
+        }
+    }
+
+    .custom-image {
+        display: flex;
+            display: block;
+            margin: 0 auto; 
+             text-align: center; 
+             flex-direction: column;
+        height: 30em;
+        width: 35em;
+      }
+    
+    .form-container {
+    
+        margin: 6px;
+        display: grid;
+        grid-auto-flow: column;
+        width: 400px;
+        justify-content: flex-start;
+    }
+    
+    form {
+        height: 500px;
+        margin: 50px auto 0;
+        padding: 0 1em;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: center;
+    }
+    
+    .form-container-row {
+        flex-direction: row;
+    }
+    
+    select, .form-label {
+        min-width: 120px;
+    }
+    
+    select, input [type=text] {
+        width: 180px;
+        margin: 2px;
+    }
+    
+    .days{
+        margin-left: 10px;
+    }
+    
+    #betalning {
+        width: 166.37px;
+        height: 19.10px;
+    }
+    
+    select, input {
+        padding: 0px;
+        height: 24px;
+    }
+    
+    input:invalid {
+        margin: 0;
+        border: 2px solid red;
+      }
+    
+    select, input:valid {
+        border: 2px solid rgb(0, 168, 8);
+      }
+
+      .custom-image {
+        display: flex;
+            display: block;
+            margin: 0 auto; 
+             text-align: center; 
+             flex-direction: column;
+        height: 9em;
+        width: 10em;
+      }
